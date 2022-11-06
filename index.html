@@ -13,7 +13,7 @@
     <!-- Page title -->
     <h1 class="title">Stuff i need to do</h1>
     <!-- Start of task content  -->
-    <div class="all-tasks-list">
+    <div class="all-tasks-list" >
         <!-- List title -->
         <h2 class="task-list-title">My list</h2>
         <!-- Start of list for tasks -->
@@ -42,18 +42,18 @@
     </div>
     <!-- End of Create new list for array -->
     <!-- Start of tasks list -->
-    <div class="tasks-list">
+    <div class="tasks-list" data-list-display-container>
             <!-- Start of task header -->
             <div class="task-list__header">
                 <!-- Task Content -->
-                <h2 class="task-title">Exercise</h2>
-                <p class="task-count">3 tasks remaining</p>
+                <h2 class="task-title" data-list-title>Exercise</h2>
+                <p class="task-count" data-list-count></p>
             </div>
             <!-- End of task header -->
             <!-- Start of body -->
             <div class="task-list__body">
                 <!-- Tasks container -->
-                <div class="tasks">
+                <div class="tasks" data-tasks>
                     <!-- Start of single task -->
                     <div class="task">
                         <input
