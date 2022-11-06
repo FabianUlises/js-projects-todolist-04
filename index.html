@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
     <title>Todo List</title>
 </head>
 <body>
@@ -18,18 +19,21 @@
         <!-- Start of list for tasks -->
         <ul class="task-list">
             <!-- List of array of tasks -->
+        <!-- 
             <li class="list-name active-task-list">Exercise</li>
             <li class="list-name">Work</li>
             <li class="list-name">Grocery</li>
+         -->
         </ul>
         <!-- End of list for tasks -->
         <!-- Start of Create new list for array -->
-        <form id="add-list-name">
+        <form data-new-list-form id="add-list-name">
             <!-- Input to create new list name for array of tasks -->
             <input
                 type="text"
                 class="list-new new"
                 placeholder="new list name"
+                data-new-list-input
                 aria-label="new list label"
             />
             <!-- Button to add new list name -->
