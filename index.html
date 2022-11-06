@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <!-- Start of page content -->
+    <!-- Page title -->
+    <h1 class="title">Stuff i need to do</h1>
+    <!-- Start of task content  -->
+    <div class="container">
+        <!-- List title -->
+        <h2 class="task-list-title">My list</h2>
+        <!-- Start of list for tasks -->
+        <ul class="task-list">
+            <!-- List of array of tasks -->
+            <li class="list-name active-task">Exercise</li>
+            <li class="list-name">Work</li>
+            <li class="list-name">Grocery</li>
+        </ul>
+        <!-- End of list for tasks -->
+        <!-- Start of Create new list for array -->
+        <form>
+            <!-- Input to create new list name for array of tasks -->
+            <input
+                type="text"
+                class="list-new"
+                placeholder="new list name"
+                aria-label="new list label"
+            />
+            <!-- Button to add new list name -->
+            <button class="btn list-btn" aria-label="create new list name">+</button>
+        </form>
+        <!-- End of Create new list for array -->
+        <!-- Start of tasks list -->
+        <div class="tasks-list">
+            <!-- Start of task header -->
+            <div class="task-list__header">
+                <!-- Task Content -->
+                <h2 class="task-title">Exercise</h2>
+                <p class="task-count">3 tasks remaining</p>
+            </div>
+            <!-- End of task header -->
+            <!-- Start of body -->
+            <div class="task-list__body">
+                <!-- Tasks container -->
+                <div class="tasks">
+                    <!-- Start of single task -->
+                    <div class="task">
+                        <input
+                            type="text"
+                            id="task-1"
+                            />
+                        <label for="task-1">
+                            <span class="custom-checkbox"></span>
+                            record todolist video
+                        </label>
+                    </div>
+                    <!-- End of single task -->
+                    <!-- Start of single task -->
+                    <div class="task">
+                        <input
+                            type="text"
+                            id="task-2"
+                            />
+                        <label for="task-2">
+                            <span class="custom-checkbox"></span>
+                            another task
+                        </label>
+                    </div>
+                    <!-- End of single task -->
+                    <!-- Start of single task -->
+                    <div class="task">
+                        <input
+                            type="text"
+                            id="task-3"
+                            />
+                        <label for="task-3">
+                            <span class="custom-checkbox"></span>
+                            a third task
+                        </label>
+                    </div>
+                    <!-- End of single task -->
+                    <!-- Start of create new task -->
+                    <div class="new-task-container">
+                        <!-- Start of new task input form -->
+                        <form action="">
+                            <input
+                            type="text"
+                            class="task-new"
+                            placeholder="new task name"
+                            aria-label="new task name"
+                            />
+                            <button class="btn-create" aria-label="create new task">+</button>
+                        </form>
+                        <!-- End of new task input form -->;
+                    </div>
+                    <div class="delete-atc">
+                        <button class="btn delete" aria-label="clear completed tasks">Clear completed tasks</button>
+                        <button class="btn delete" aria-label="delete tasks list">Delete list</button>
+                    </div>
+                    <!-- End of create new task -->
+                </div>
+            </div>
+            <!-- End of body -->
+        </div>
+        <!-- End of task list -->
+    </div>
+    <!-- End of task content -->
+    <!-- End of page content -->
+</body>
+</html>
