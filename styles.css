@@ -77,8 +77,10 @@ body {
     opacity: 0.7;
 }
 /* Active class */
-.active-task-list {
+.active-list {
     font-weight: 700;
+    color: red;
+    list-style: decimal;
 }
 /* form to create new task list name */
 form {
