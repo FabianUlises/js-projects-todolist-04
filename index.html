@@ -12,13 +12,13 @@
     <!-- Page title -->
     <h1 class="title">Stuff i need to do</h1>
     <!-- Start of task content  -->
-    <div class="container">
+    <div class="all-tasks-list">
         <!-- List title -->
         <h2 class="task-list-title">My list</h2>
         <!-- Start of list for tasks -->
         <ul class="task-list">
             <!-- List of array of tasks -->
-            <li class="list-name active-task">Exercise</li>
+            <li class="list-name active-task-list">Exercise</li>
             <li class="list-name">Work</li>
             <li class="list-name">Grocery</li>
         </ul>
@@ -28,16 +28,17 @@
             <!-- Input to create new list name for array of tasks -->
             <input
                 type="text"
-                class="list-new"
+                class="list-new new"
                 placeholder="new list name"
                 aria-label="new list label"
             />
             <!-- Button to add new list name -->
-            <button class="btn list-btn" aria-label="create new list name">+</button>
+            <button class="btn new-btn list-btn" aria-label="create new list name">+</button>
         </form>
-        <!-- End of Create new list for array -->
-        <!-- Start of tasks list -->
-        <div class="tasks-list">
+    </div>
+    <!-- End of Create new list for array -->
+    <!-- Start of tasks list -->
+    <div class="tasks-list">
             <!-- Start of task header -->
             <div class="task-list__header">
                 <!-- Task Content -->
@@ -52,7 +53,7 @@
                     <!-- Start of single task -->
                     <div class="task">
                         <input
-                            type="text"
+                            type="checkbox"
                             id="task-1"
                             />
                         <label for="task-1">
@@ -64,7 +65,7 @@
                     <!-- Start of single task -->
                     <div class="task">
                         <input
-                            type="text"
+                            type="checkbox"
                             id="task-2"
                             />
                         <label for="task-2">
@@ -76,7 +77,7 @@
                     <!-- Start of single task -->
                     <div class="task">
                         <input
-                            type="text"
+                            type="checkbox"
                             id="task-3"
                             />
                         <label for="task-3">
@@ -91,15 +92,15 @@
                         <form action="">
                             <input
                             type="text"
-                            class="task-new"
+                            class="task-new new"
                             placeholder="new task name"
                             aria-label="new task name"
                             />
-                            <button class="btn-create" aria-label="create new task">+</button>
+                            <button class="btn-create btn new-btn" aria-label="create new task">+</button>
                         </form>
-                        <!-- End of new task input form -->;
+                        <!-- End of new task input form -->
                     </div>
-                    <div class="delete-atc">
+                    <div class="delete-cta">
                         <button class="btn delete" aria-label="clear completed tasks">Clear completed tasks</button>
                         <button class="btn delete" aria-label="delete tasks list">Delete list</button>
                     </div>
@@ -107,10 +108,8 @@
                 </div>
             </div>
             <!-- End of body -->
-        </div>
-        <!-- End of task list -->
     </div>
-    <!-- End of task content -->
+    <!-- End of task list -->
     <!-- End of page content -->
 </body>
 </html>
